@@ -62,7 +62,7 @@ public class CameraFollow : MonoBehaviour
             this.transform.position = Vector3.Lerp(this.transform.position, finalloc, Interpolate);
         }
 
-        this.transform.LookAt(Target.transform.position); //not for older the shoulder
+        this.transform.LookAt(Target.transform.position); //not for over the shoulder
         this.transform.forward = Target.transform.forward;
         oldPosition = Target.transform.position;
 
